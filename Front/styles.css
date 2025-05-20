@@ -1,0 +1,136 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor principal */
+.chat-container {
+  width: 90%;
+  max-width: 600px;
+  height: 50vh;
+  background-color: #f8f8f8;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(67, 176, 42, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 2px solid #43B02A;
+}
+
+/* Header del chat */
+.chat-header {
+  background-color: black /* #43B02A */;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+
+.chat-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.logo-sena {
+  width: 80px;
+  height: 80px;
+}
+
+/* Caja de mensajes */
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+}
+
+/* Mensajes */
+.message {
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 75%;
+  animation: fadeIn 0.4s ease;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #dff6dd;
+  color: #1a1a1a;
+  border: 1px solid #43B02A;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #eeeeee;
+  color: #1a1a1a;
+  border: 1px solid #cccccc;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Input y botón */
+.chat-input-container {
+  display: flex;
+  padding: 15px;
+  background: #f1f1f1;
+  border-top: 1px solid #cccccc;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  outline: none;
+}
+
+#send-button {
+  background-color: #43B02A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+#send-button:hover {
+  background-color: #368d22;
+}
+
+/* Animación "escribiendo..." */
+.typing-indicator {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #dddddd;
+  border-radius: 20px;
+  max-width: 60%;
+  align-self: flex-start;
+  font-style: italic;
+  color: #555;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}

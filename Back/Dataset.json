@@ -1,0 +1,159 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola", "buenos días", "buenas tardes", "buenas noches", "¿qué tal?",
+        "hey", "holaa", "holaaa", "buen día", "qué onda", "cómo estás", "qué más", "qué hay"
+      ],
+      "responses": [
+        "¡Hola! Soy Grafen, tu asistente virtual del SENA. ¿En qué puedo ayudarte hoy?",
+        "¡Buen día! Grafen aquí, listo para apoyarte.",
+        "¡Hola! Grafen a tu servicio. ¿Necesitas ayuda sobre la etapa productiva?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "adiós", "hasta luego", "nos vemos", "gracias por tu ayuda",
+        "chao", "bye", "gracias", "me voy", "saludos", "hasta pronto", "vale, gracias"
+      ],
+      "responses": [ 
+        "¡Hasta luego! Grafen espera haberte sido útil.",
+        "Nos vemos pronto. Recuerda que Grafen está aquí para ayudarte cuando lo necesites.",
+        "¡Gracias por conversar con Grafen! ¡Que tengas un excelente día!"
+      ]
+    },
+    {
+      "tag": "nombre_bot",
+      "patterns": [
+        "cómo te llamas", "cuál es tu nombre", "quién eres", "tienes nombre",
+        "nombre del asistente", "nombre bot", "cómo se llama el bot", "quién es grafen"
+      ],
+      "responses": [
+        "¡Soy Grafen, tu asistente virtual del SENA! Estoy aquí para ayudarte.",
+        "Me llamo Grafen, tu guía en la etapa productiva del SENA.",
+        "Puedes llamarme Grafen. ¿En qué puedo ayudarte hoy?"
+      ]
+    },
+    {
+      "tag": "etapa_productiva",
+      "patterns": [
+        "qué es la etapa productiva", "explícame la etapa productiva", "cómo funciona la etapa productiva",
+        "en qué consiste la etapa productiva", "definición etapa productiva", "qué significa etapa productiva", "etapa productiva"
+      ],
+      "responses": [
+        "Grafen te explica: La etapa productiva es donde los aprendices aplican los conocimientos adquiridos en el SENA, mediante una experiencia laboral real.\n\nExisten varias alternativas para formalizarla. ¿Te gustaría conocerlas?"
+      ]
+    },
+    {
+      "tag": "alternativas",
+      "patterns": [
+        "cuáles son las alternativas de la etapa productiva", "qué opciones tengo para etapa productiva",
+        "alternativas etapa productiva", "qué alternativas hay", "qué puedo hacer en la etapa productiva",
+        "opciones para la etapa productiva", "alternativas"
+      ],
+      "responses": [
+        "Grafen te informa sobre las alternativas:\n\n1️⃣ Contrato de Aprendizaje\n2️⃣ Vínculo Laboral\n3️⃣ Pasantía en Entidad\n4️⃣ Monitoría\n5️⃣ Proyecto Productivo\n\n¿Sobre cuál necesitas información detallada?"
+      ]
+    },
+    {
+      "tag": "contrato_aprendizaje",
+      "patterns": [
+        "qué es el contrato de aprendizaje", "cómo hacer un contrato de aprendizaje", "cómo aplicar al contrato de aprendizaje",
+        "documentos para contrato de aprendizaje", "requisitos para contrato de aprendizaje", "contrato de aprendizaje", "info contrato aprendizaje"
+      ],
+      "responses": [
+        "📋 **Contrato de Aprendizaje**\n\n📄 Documentos requeridos:\n- Formato GFPI-F-023 (Información general y planeación)\n- Contrato firmado por ambas partes\n- Copia de afiliación a EPS (FOSYGA/ADRES)\n- Copia de afiliación a ARL\n\n🔍 ¿Necesitas ayuda con otro documento?"
+      ]
+    },
+    {
+      "tag": "vinculo_laboral",
+      "patterns": [
+        "qué es un vínculo laboral", "cómo hago un vínculo laboral", "documentos para vínculo laboral",
+        "requisitos vínculo laboral", "cómo aplicar a vínculo laboral", "vínculo laboral sena", "formalizar vínculo laboral"
+      ],
+      "responses": [
+        "📋 **Vínculo Laboral**\n\n📄 Documentos requeridos:\n- Formato GFPI-F-023\n- Formato GFPI-F-165 (firmado por coordinación)\n- Certificación laboral con funciones relacionadas al programa\n- Copia afiliación EPS\n- Copia afiliación ARL\n\n📌 Envía los documentos a: documentos@sena.edu.co"
+      ]
+    },
+    {
+      "tag": "pasantia_entidad",
+      "patterns": [
+        "qué es una pasantía", "cómo hacer una pasantía", "documentos para pasantía", "requisitos para pasantía",
+        "cómo aplicar a pasantía", "pasantía", "pasantía en entidad estatal", "pasantía ong", "pasantía pyme", "pasantía empresa familiar"
+      ],
+      "responses": [
+        "📋 **Pasantía en Entidad Estatal u ONG**\n\n📄 Documentos requeridos:\n- Formato GFPI-F-023\n- Formato GFPI-F-165\n- Carta de aceptación en hoja membreteada\n- Copia afiliación EPS\n- Copia afiliación ARL\n\n✅ Estos documentos deben ser enviados por correo o entregados al instructor.",
+        "📋 **Pasantía en Empresa Familiar o PyME**\n\n📄 Documentos requeridos:\n- Formato GFPI-F-023\n- Formato GFPI-F-165\n- Carta de aceptación en hoja membreteada\n- Copia afiliación EPS\n- Copia afiliación ARL\n- Certificado de Cámara de Comercio o RUT\n\n💼 Recuerda que todos los documentos deben estar firmados."
+      ]
+    },
+    {
+      "tag": "monitoria",
+      "patterns": [
+        "qué es la monitoría", "cómo hacer monitoría", "requisitos para monitoría",
+        "documentos para monitoría", "cómo aplicar a monitoría", "monitoría sena", "formalizar monitoría"
+      ],
+      "responses": [
+        "📋 **Monitoría**\n\n📄 Documentos requeridos:\n- Formato GFPI-F-023\n- Formato GFPI-F-165\n- Copia afiliación EPS\n- Copia afiliación ARL\n\n💡 Recuerda que todos los documentos deben estar firmados y en PDF."
+      ]
+    },
+    {
+      "tag": "proyecto_productivo",
+      "patterns": [
+        "qué es un proyecto productivo", "cómo hacer un proyecto productivo", "documentos para proyecto productivo",
+        "requisitos para proyecto productivo", "cómo aplicar a proyecto productivo", "proyecto productivo sena", "formalizar proyecto productivo"
+      ],
+      "responses": [
+        "📋 **Proyecto Productivo**\n\n📄 Documentos requeridos:\n- Formato GFPI-F-023\n- Formato GFPI-F-165\n- Copia afiliación EPS\n- Copia afiliación ARL\n\n⚠️ Todos los formatos deben estar completamente diligenciados."
+      ]
+    },
+    {
+      "tag": "info_sede",
+      "patterns": [
+        "información sede", "cómo saber más de la sede", "dónde encuentro información de la sede",
+        "link sede sena", "información adicional de la sede", "contacto sede", "dirección sede"
+      ],
+      "responses": [
+        "🌐 **Información de sede**:\n\nPuedes consultar detalles sobre contratos y sedes aquí:\n🔗 [Blog SENA - Contrato de Aprendizaje](https://comunicaciongraficasena.blogspot.com/p/contrato-de-aprendizaje.html)\n\n¿Buscas información específica de tu regional?"
+      ]
+    },
+    {
+      "tag": "video_postulacion_alternativas",
+      "patterns": [
+        "cómo me postulo para conseguir empresa",
+        "cómo buscar empresa para etapa productiva",
+        "hay algún video para postularme",
+        "dónde me postulo para etapa productiva",
+        "video para buscar empresa",
+        "cómo conseguir empresa para contrato de aprendizaje",
+        "postularse etapa productiva",
+        "buscar empresa por video",
+        "buscar empresa para pasantía"
+      ],
+      "responses": [
+        "🎥 **Postulación según alternativa**\n\nPuedes ver cómo postularte para conseguir una empresa o entidad de acuerdo a la alternativa de tu etapa productiva en el siguiente video oficial del SENA:\n\n🔗 [Video de orientación - Cómo postularse a una alternativa productiva](https://youtu.be/9e-jhnHAFiM?si=u-W0tMwfb0rg8CXG)\n\nEste video te orienta paso a paso para:\n✅ Contrato de Aprendizaje\n✅ Vínculo Laboral\n✅ Pasantía\n✅ Monitoría\n✅ Proyecto Productivo\n\n📌 ¡Ten a la mano tu hoja de vida y documentos requeridos!"
+      ]
+    },
+    {
+      "tag": "registro_novedades_sofia",
+      "patterns": [
+        "cómo registrar una novedad en sofia plus",
+        "cómo se hace una novedad en sofia",
+        "cómo reportar una novedad en sofia plus",
+        "dónde se registra una novedad en sofia",
+        "cómo subo una novedad",
+        "cómo informo una novedad al sena",
+        "novedad sofia plus",
+        "pasos para novedad en sofia",
+        "qué es una novedad en sofia",
+        "quiero registrar una novedad"
+      ],
+      "responses": [
+        "🛠️ **Registro de Novedades en SOFIA PLUS**\n\nPara registrar una novedad (retiro, aplazamiento, cambio de alternativa, etc.) sigue estos pasos:\n\n1️⃣ Ingresa a 👉 [SOFIA PLUS](https://oferta.senasofiaplus.edu.co/sofia-oferta/)\n2️⃣ Inicia sesión con tu documento.\n3️⃣ En el menú, busca la sección de *'Gestión de Novedades'*.\n4️⃣ Selecciona el tipo de novedad a registrar.\n5️⃣ Diligencia los datos requeridos y sube los documentos de soporte (si aplica).\n\n🎥 Puedes seguir este video paso a paso:\n🔗 [Cómo registrar novedades en SOFIA PLUS](https://youtu.be/aheWgjNyhMo?si=bjL-arlJC-5Loj4G)\n\n❗ Importante: Si tienes dudas adicionales, puedes contactar a tu instructor o al área de Bienestar del Centro."
+      ]
+    }
+  ]
+}
+
+
