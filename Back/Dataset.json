@@ -13,6 +13,71 @@
       ]
     },
     {
+  "tag": "duracion_etapa_productiva",
+  "patterns": [
+    "cuánto dura la etapa productiva",
+    "cuánto tiempo es la etapa productiva",
+    "duración etapa productiva",
+    "cuántos meses dura la etapa productiva",
+    "tiempo de la etapa productiva",
+    "hasta cuándo va la etapa productiva",
+    "qué tiempo dura la etapa productiva",
+    "la etapa productiva cuánto dura",
+    "por cuántos meses es la etapa productiva",
+    "cuántas semanas dura la etapa productiva",
+    "cuál es la duración de la etapa productiva",
+    "la etapa productiva es de cuántos meses",
+    "cuánto tiempo tengo que estar en etapa productiva",
+    "en qué fechas se hace la etapa productiva",
+    "dura mucho la etapa productiva",
+    "es larga la etapa productiva",
+    "cuánto me demoro en la etapa productiva",
+    "cuánto tiempo paso en la etapa productiva",
+    "por cuánto tiempo estaré en la etapa productiva"
+  ],
+  "responses": [
+    "⏳ La etapa productiva generalmente dura entre **3 y 6 meses**, dependiendo del programa de formación. Consulta con tu instructor o la coordinación académica para saber la duración exacta de tu programa.",
+    "🕒 La duración de la etapa productiva varía según el programa, pero suele estar entre **3 y 6 meses**. ¡Revisa tu cronograma de formación o pregunta a tu instructor!",
+    "⌚ En la mayoría de los casos, la etapa productiva tiene una duración de **medio año o menos**. Confirma esta información con tu ficha o centro de formación."
+  ]
+},
+    {
+      "tag": "ayuda",
+      "patterns": [
+        "necesito ayuda", "ayúdame", "tengo una duda", "no entiendo",
+        "puedes ayudarme", "quiero saber", "tengo una pregunta", "dame información"
+      ],
+      "responses": [
+        "¡Claro! Estoy aquí para ayudarte. ¿Sobre qué tema necesitas información?",
+        "Por supuesto, Grafen está aquí para resolver tus dudas. ¿Qué necesitas saber?",
+        "¡Estoy listo para ayudarte! ¿Cuál es tu pregunta?"
+      ]
+    },
+    {
+      "tag": "gracias",
+      "patterns": [
+        "gracias", "muchas gracias", "te agradezco", "mil gracias",
+        "agradecido", "gracias por tu ayuda", "gracias por la información"
+      ],
+      "responses": [
+        "¡De nada! Grafen está aquí para ayudarte.",
+        "¡Con gusto! Si necesitas más información, no dudes en preguntar.",
+        "¡A ti por usar Grafen! Estoy aquí para lo que necesites."
+      ]
+    },
+    {
+      "tag": "no_entendido",
+      "patterns": [
+        "no entiendo", "no comprendo", "no sé", "no sé qué hacer",
+        "no entiendo la información", "no me queda claro", "me perdí"
+      ],
+      "responses": [
+        "Lo siento, Grafen no entendió. ¿Podrías reformular tu pregunta?",
+        "Entiendo, a veces la información puede ser confusa. ¿Puedes darme más detalles?",
+        "¡No hay problema! Grafen está aquí para aclarar tus dudas. ¿Qué parte no entendiste?"
+      ]
+    },
+    {
       "tag": "despedida",
       "patterns": [
         "adiós", "hasta luego", "nos vemos", "gracias por tu ayuda",
