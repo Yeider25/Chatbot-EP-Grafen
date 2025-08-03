@@ -78,7 +78,16 @@ body {
     background: #f3f4f6;
     border-radius: 0 0 12px 12px;
     min-height: 300px;
+    max-height: 450px;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+    .chat-area {
+        max-height: 350px;
+        min-height: 200px;
+    }
 }
 
 .message {
