@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./img/Logo SENA.png" type="image/png" />
-  <title>Chatbot SENA - Grafen</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Grafen</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="chat-container">
-    <div class="chat-header">
-      <img src="./img/Pulpo_S.png" alt="Logo SENA" class="logo-sena" />
-      <h1>Hola, soy Grafen ¿Te ayudo?</h1>
+    <div class="container">
+        <div class="header">
+            <img src="./img/Pulpo_S.png" alt="Pulpo" class="logo">
+            <h1>Chatbot Grafen</h1>
+        </div>
+        <div class="chat-area" id="chat-area">
+            <!-- Mensajes del chat -->
+        </div>
+        <form class="input-area" id="chat-form">
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje..." autocomplete="off" required />
+            <button type="submit" id="send-button">Enviar</button>
+        </form>
     </div>
-
-    <div id="chat-box" class="chat-box">
-      <!-- Mensajes se insertan aquí -->
-    </div>
-
-    <div class="chat-input-container">
-      <input type="text" id="user-input" placeholder="Escribe tu mensaje..." autocomplete="off" />
-      <button id="send-button">Enviar</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
