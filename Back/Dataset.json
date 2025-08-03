@@ -13,34 +13,34 @@
       ]
     },
     {
-  "tag": "duracion_etapa_productiva",
-  "patterns": [
-    "cuánto dura la etapa productiva",
-    "cuánto tiempo es la etapa productiva",
-    "duración etapa productiva",
-    "cuántos meses dura la etapa productiva",
-    "tiempo de la etapa productiva",
-    "hasta cuándo va la etapa productiva",
-    "qué tiempo dura la etapa productiva",
-    "la etapa productiva cuánto dura",
-    "por cuántos meses es la etapa productiva",
-    "cuántas semanas dura la etapa productiva",
-    "cuál es la duración de la etapa productiva",
-    "la etapa productiva es de cuántos meses",
-    "cuánto tiempo tengo que estar en etapa productiva",
-    "en qué fechas se hace la etapa productiva",
-    "dura mucho la etapa productiva",
-    "es larga la etapa productiva",
-    "cuánto me demoro en la etapa productiva",
-    "cuánto tiempo paso en la etapa productiva",
-    "por cuánto tiempo estaré en la etapa productiva"
-  ],
-  "responses": [
-    "⏳ La etapa productiva generalmente dura entre **3 y 6 meses**, dependiendo del programa de formación. Consulta con tu instructor o la coordinación académica para saber la duración exacta de tu programa.",
-    "🕒 La duración de la etapa productiva varía según el programa, pero suele estar entre **3 y 6 meses**. ¡Revisa tu cronograma de formación o pregunta a tu instructor!",
-    "⌚ En la mayoría de los casos, la etapa productiva tiene una duración de **medio año o menos**. Confirma esta información con tu ficha o centro de formación."
-  ]
-},
+      "tag": "duracion_etapa_productiva",
+      "patterns": [
+        "cuánto dura la etapa productiva",
+        "cuánto tiempo es la etapa productiva",
+        "duración etapa productiva",
+        "cuántos meses dura la etapa productiva",
+        "tiempo de la etapa productiva",
+        "hasta cuándo va la etapa productiva",
+        "qué tiempo dura la etapa productiva",
+        "la etapa productiva cuánto dura",
+        "por cuántos meses es la etapa productiva",
+        "cuántas semanas dura la etapa productiva",
+        "cuál es la duración de la etapa productiva",
+        "la etapa productiva es de cuántos meses",
+        "cuánto tiempo tengo que estar en etapa productiva",
+        "en qué fechas se hace la etapa productiva",
+        "dura mucho la etapa productiva",
+        "es larga la etapa productiva",
+        "cuánto me demoro en la etapa productiva",
+        "cuánto tiempo paso en la etapa productiva",
+        "por cuánto tiempo estaré en la etapa productiva"
+      ],
+      "responses": [
+        "⏳ La etapa productiva generalmente dura entre **3 y 6 meses**, dependiendo del programa de formación. Consulta con tu instructor o la coordinación académica para saber la duración exacta de tu programa.",
+        "🕒 La duración de la etapa productiva varía según el programa, pero suele estar entre **3 y 6 meses**. ¡Revisa tu cronograma de formación o pregunta a tu instructor!",
+        "⌚ En la mayoría de los casos, la etapa productiva tiene una duración de **medio año o menos**. Confirma esta información con tu ficha o centro de formación."
+      ]
+    },
     {
       "tag": "ayuda",
       "patterns": [
@@ -83,7 +83,7 @@
         "adiós", "hasta luego", "nos vemos", "gracias por tu ayuda",
         "chao", "bye", "gracias", "me voy", "saludos", "hasta pronto", "vale, gracias"
       ],
-      "responses": [ 
+      "responses": [
         "¡Hasta luego! Grafen espera haberte sido útil.",
         "Nos vemos pronto. Recuerda que Grafen está aquí para ayudarte cuando lo necesites.",
         "¡Gracias por conversar con Grafen! ¡Que tengas un excelente día!"
@@ -108,8 +108,9 @@
         "en qué consiste la etapa productiva", "definición etapa productiva", "qué significa etapa productiva", "etapa productiva"
       ],
       "responses": [
-        "Grafen te explica: La etapa productiva es donde los aprendices aplican los conocimientos adquiridos en el SENA, mediante una experiencia laboral real.\n\nExisten varias alternativas para formalizarla. ¿Te gustaría conocerlas?"
-      ]
+        "Grafen te explica: La etapa productiva es donde los aprendices aplican los conocimientos adquiridos en el SENA, mediante una experiencia laboral real. Existen varias alternativas para formalizarla. ¿Te gustaría conocerlas?"
+      ],
+      "context_set": "esperando_confirmacion_alternativas"
     },
     {
       "tag": "alternativas",
@@ -121,6 +122,16 @@
       "responses": [
         "Grafen te informa sobre las alternativas:\n\n1️⃣ Contrato de Aprendizaje\n2️⃣ Vínculo Laboral\n3️⃣ Pasantía en Entidad\n4️⃣ Monitoría\n5️⃣ Proyecto Productivo\n\n¿Sobre cuál necesitas información detallada?"
       ]
+    },
+    {
+      "tag": "confirmar_alternativas",
+      "patterns": [
+        "Sí", "Claro", "Por favor", "Quiero saber", "Dime cuáles", "Cuáles son", "Listalas", "Si quiero", "Sí quiero"
+      ],
+      "responses": [
+        "Las alternativas para formalizar la etapa productiva son: 1) Contrato de aprendizaje, 2) Vinculación laboral, 3) Proyectos productivos, 4) Monitorías, 5) Pasantías empresariales. Si necesitas más información sobre alguna, dime cuál."
+      ],
+      "context_filter": "esperando_confirmacion_alternativas"
     },
     {
       "tag": "contrato_aprendizaje",
@@ -217,8 +228,23 @@
       "responses": [
         "🛠️ **Registro de Novedades en SOFIA PLUS**\n\nPara registrar una novedad (retiro, aplazamiento, cambio de alternativa, etc.) sigue estos pasos:\n\n1️⃣ Ingresa a 👉 [SOFIA PLUS](https://oferta.senasofiaplus.edu.co/sofia-oferta/)\n2️⃣ Inicia sesión con tu documento.\n3️⃣ En el menú, busca la sección de *'Gestión de Novedades'*.\n4️⃣ Selecciona el tipo de novedad a registrar.\n5️⃣ Diligencia los datos requeridos y sube los documentos de soporte (si aplica).\n\n🎥 Puedes seguir este video paso a paso:\n🔗 [Cómo registrar novedades en SOFIA PLUS](https://youtu.be/aheWgjNyhMo?si=bjL-arlJC-5Loj4G)\n\n❗ Importante: Si tienes dudas adicionales, puedes contactar a tu instructor o al área de Bienestar del Centro."
       ]
+    },
+    {
+      "tag": "confirmar_alternativas_contexto",
+      "patterns": [
+        "Sí", "Claro", "Por favor", "Quiero saber", "Dime cuáles", "Cuáles son", "Listalas", "Si quiero", "Sí quiero"
+      ],
+      "responses": [
+        "Las alternativas para formalizar la etapa productiva son: 1) Contrato de aprendizaje, 2) Vinculación laboral, 3) Proyectos productivos, 4) Monitorías, 5) Pasantías empresariales. Si necesitas más información sobre alguna, dime cuál."
+      ],
+      "context_filter": "esperando_confirmacion_alternativas"
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Lo siento, no entendí tu pregunta. ¿Puedes reformularla o ser más específico?"
+      ]
     }
   ]
 }
-
-

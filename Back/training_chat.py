@@ -15,7 +15,7 @@ nltk.download('punkt')
 nltk.download('punkt_tab')
 
 # Cargar los datos
-datafile = open('./Dataset.json', 'r', encoding='utf-8').read()
+datafile = open('./Back/Dataset.json', 'r', encoding='utf-8').read()
 intents = json.loads(datafile)
 
 lemmatizer = WordNetLemmatizer()
@@ -39,8 +39,8 @@ words = sorted(list(set(words)))
 classes = sorted(list(set(classes)))
 
 # Guardar palabras y clases
-pickle.dump(words, open('./words.pkl', 'wb'))
-pickle.dump(classes, open('./classes.pkl', 'wb'))
+pickle.dump(words, open('./Back/words.pkl', 'wb'))
+pickle.dump(classes, open('./Back/classes.pkl', 'wb'))
 
 # Crear entrenamiento
 training = []
@@ -84,6 +84,6 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 hist = model.fit(train_x, train_y, epochs=110, batch_size=5, verbose=1)
 
 # Guardar el modelo
-model.save('./chatbotejemplo.h5')
+model.save('./Back/chatbotejemplo.h5')
 
 print('Modelo creado exitosamente')
