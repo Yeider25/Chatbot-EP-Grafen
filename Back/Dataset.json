@@ -145,7 +145,7 @@
     {
       "tag": "pasantia_entidad",
       "patterns": [
-        "qué es una pasantía", "cómo hacer una pasantía", "documentos para pasantía", "requisitos para pasantía",
+        "cómo hacer una pasantía", "documentos para pasantía", "requisitos para pasantía",
         "cómo aplicar a pasantía", "pasantía", "pasantía en entidad estatal", "pasantía ong", "pasantía pyme", "pasantía empresa familiar"
       ],
       "responses": [

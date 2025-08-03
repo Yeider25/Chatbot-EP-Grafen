@@ -20,10 +20,10 @@ nltk.download('wordnet')
 
 # Cargar el lematizador, dataset de intenciones, palabras y clases entrenadas, y el modelo
 lemmatizer = WordNetLemmatizer()
-intents = json.loads(open('./Dataset.json', 'r', encoding='utf-8').read())
-words = pickle.load(open('./words.pkl', 'rb'))
-classes = pickle.load(open('./classes.pkl', 'rb'))
-model = load_model('./chatbotejemplo.h5')
+intents = json.loads(open('./Back/Dataset.json', 'r', encoding='utf-8').read())
+words = pickle.load(open('./Back/words.pkl', 'rb'))
+classes = pickle.load(open('./Back/classes.pkl', 'rb'))
+model = load_model('./Back/chatbotejemplo.h5')
 
 class ChatbotAgent:
     def __init__(self, name="Bot"):
